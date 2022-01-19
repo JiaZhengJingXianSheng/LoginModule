@@ -111,7 +111,9 @@ class MainWindow(QMainWindow):
 
 # main program
 if __name__ == "__main__":
+    IP = "" # need change
+    Port = 111 # need change
     app = QApplication([])
-    main_window = LoginWindow('1.15.178.156', 2022)
+    main_window = LoginWindow(IP, Port)
     main_window.show()
     app.exec()
